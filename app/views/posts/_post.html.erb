@@ -9,8 +9,16 @@
   </p>
 
   <p>
+    <strong><%= pluralize post.comments.count, "comment" %></strong>
+  </p>
+
+  <p>
     <strong>Content:</strong>
     <%= post.content %>
+  </p>
+
+  <p>
+    <%= link_to "Show this post", post %>
   </p>
 
 </div>
